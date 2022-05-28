@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="Find_couple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ИГРА" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GII-6O-nSW">
+                                <rect key="frame" x="180" y="189" width="54" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="hAL-2M-NoU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="uee-KO-frq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЙДИ ПАРУ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqJ-4c-LvA">
+                                <rect key="frame" x="124.5" y="218" width="165.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wfN-zE-bdy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZU-ib-ODE">
+                                <rect key="frame" x="125" y="298" width="164" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9op-Tx-LVc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="h9A-fU-cUZ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="EASY">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
+                                        <color key="strokeColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
+                                    <color key="baseBackgroundColor" red="0.93725490196078431" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="8dI-Ne-otu" kind="show" identifier="Easy" id="cvj-md-vat"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLA-V5-lyO">
+                                <rect key="frame" x="124.5" y="376" width="165" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="HpQ-ws-xTb"/>
+                                    <constraint firstAttribute="height" constant="48" id="sTJ-rX-QVT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="MIDLE">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
+                                        <color key="strokeColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
+                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Dsq-fb-kX0" kind="show" identifier="Midle" id="9S5-qS-6CC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S84-d7-ECE">
+                                <rect key="frame" x="125" y="454" width="164" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="4xb-Y3-xAF"/>
+                                    <constraint firstAttribute="height" constant="48" id="QXe-jC-3uX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="HARD">
+                                    <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="2">
+                                        <color key="strokeColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
+                                    <color key="baseBackgroundColor" red="0.93725490199999995" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="eS9-OM-Dmh" kind="show" identifier="Hard" id="v6c-x5-MZc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CqJ-4c-LvA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xD-9t-9GN"/>
+                            <constraint firstItem="GZU-ib-ODE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5RJ-U9-3V8"/>
+                            <constraint firstItem="CqJ-4c-LvA" firstAttribute="top" secondItem="GII-6O-nSW" secondAttribute="bottom" constant="5" id="GmU-dG-bG4"/>
+                            <constraint firstItem="S84-d7-ECE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OMc-IB-gwi"/>
+                            <constraint firstItem="S84-d7-ECE" firstAttribute="top" secondItem="ZLA-V5-lyO" secondAttribute="bottom" constant="30" id="PaD-Yy-2Gm"/>
+                            <constraint firstItem="GZU-ib-ODE" firstAttribute="top" secondItem="CqJ-4c-LvA" secondAttribute="bottom" constant="50" id="Q5e-GY-GKR"/>
+                            <constraint firstItem="ZLA-V5-lyO" firstAttribute="top" secondItem="GZU-ib-ODE" secondAttribute="bottom" constant="30" id="Vir-QU-LWq"/>
+                            <constraint firstItem="ZLA-V5-lyO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBA-Sc-Ei4"/>
+                            <constraint firstItem="GII-6O-nSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgd-T3-QDJ"/>
+                            <constraint firstItem="GII-6O-nSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="gtp-er-kHx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="81.696428571428569"/>
+        </scene>
+        <!--Midle Game View Controller-->
+        <scene sceneID="Gga-f1-3tW">
+            <objects>
+                <viewController id="Dsq-fb-kX0" customClass="MidleGameViewController" customModule="Find_couple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="neG-aY-zcu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЙДИ ПАРУ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbG-lB-DR2">
+                                <rect key="frame" x="124.5" y="114" width="165.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="6vR-d5-5hk"/>
+                                    <constraint firstAttribute="height" constant="30" id="P1P-QB-lFd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="nHN-H7-Bne"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="ybv-yh-eEL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIDLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0f-wU-lxM">
+                                <rect key="frame" x="174" y="146" width="66" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="kH4-Vu-gwF"/>
+                                    <constraint firstAttribute="height" constant="26" id="u4T-b2-TyH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="31e-b7-aG0">
+                                <rect key="frame" x="40" y="302" width="334" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-yK-5sq">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpZ-DA-B3B">
+                                        <rect key="frame" x="117" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPh-EL-hqx">
+                                        <rect key="frame" x="234" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ii2-eT-0q6"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="7qN-4m-5Fc">
+                                <rect key="frame" x="40" y="442" width="334" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4E-b9-5Oe">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Oh-pM-uiz">
+                                        <rect key="frame" x="117" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2m-4w-RDB">
+                                        <rect key="frame" x="234" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6fn-ih-JQi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g2G-7o-eBJ"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p0f-wU-lxM" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="Cxj-VX-oOI"/>
+                            <constraint firstItem="31e-b7-aG0" firstAttribute="top" secondItem="p0f-wU-lxM" secondAttribute="bottom" constant="130" id="ENC-Cf-swX"/>
+                            <constraint firstItem="7qN-4m-5Fc" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="OfW-1w-yYU"/>
+                            <constraint firstItem="p0f-wU-lxM" firstAttribute="top" secondItem="RbG-lB-DR2" secondAttribute="bottom" constant="2" id="an4-3K-Xtf"/>
+                            <constraint firstItem="31e-b7-aG0" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="ke2-cx-kaj"/>
+                            <constraint firstItem="RbG-lB-DR2" firstAttribute="top" secondItem="g2G-7o-eBJ" secondAttribute="top" constant="70" id="lX1-mS-O9g"/>
+                            <constraint firstItem="7qN-4m-5Fc" firstAttribute="top" secondItem="31e-b7-aG0" secondAttribute="bottom" constant="40" id="mON-2E-l27"/>
+                            <constraint firstItem="RbG-lB-DR2" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="y5t-BE-BOE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T3z-6q-KYM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YmB-6K-w6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="81.696428571428569"/>
+        </scene>
+        <!--Easy Game View Controller-->
+        <scene sceneID="WU5-99-Ytj">
+            <objects>
+                <viewController id="8dI-Ne-otu" customClass="EasyGameViewController" customModule="Find_couple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fs-Pe-Jar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЙДИ ПАРУ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLO-zw-sNI">
+                                <rect key="frame" x="124.5" y="114" width="165.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="4fv-0u-hn1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="M1Q-My-zLF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="mwh-Az-xPY"/>
+                                    <constraint firstAttribute="height" constant="30" id="wsv-8G-T2I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iy4-az-RdM">
+                                <rect key="frame" x="60" y="274" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="LRD-Nb-zJh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h0-u8-pQu">
+                                <rect key="frame" x="254" y="274" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="I9t-7a-OHj"/>
+                                    <constraint firstAttribute="height" constant="100" id="zZj-S6-ifk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hv-fW-U8f">
+                                <rect key="frame" x="60" y="424" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GgX-3H-eJg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="JMQ-yK-f7j"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3W-SV-f23">
+                                <rect key="frame" x="254" y="424" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="OXg-UH-65Y"/>
+                                    <constraint firstAttribute="height" constant="100" id="gTa-ee-mgl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EASY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-BR-eNO">
+                                <rect key="frame" x="181" y="146" width="52" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="5w5-cq-cuz"/>
+                                    <constraint firstAttribute="height" constant="24" id="ra5-OQ-e4q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ira-Um-MZB"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iy4-az-RdM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ira-Um-MZB" secondAttribute="leading" id="8R1-rK-1fP"/>
+                            <constraint firstItem="N3W-SV-f23" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0hv-fW-U8f" secondAttribute="trailing" constant="8" symbolic="YES" id="9Jc-Nt-Dpy"/>
+                            <constraint firstItem="0hv-fW-U8f" firstAttribute="leading" secondItem="ira-Um-MZB" secondAttribute="leading" constant="60" id="Fxo-QO-MaH"/>
+                            <constraint firstItem="2h0-u8-pQu" firstAttribute="leading" secondItem="iy4-az-RdM" secondAttribute="trailing" constant="94" id="LhB-yS-20B"/>
+                            <constraint firstItem="N3W-SV-f23" firstAttribute="top" secondItem="2h0-u8-pQu" secondAttribute="bottom" constant="50" id="d59-az-ahy"/>
+                            <constraint firstItem="2h0-u8-pQu" firstAttribute="top" secondItem="fLO-zw-sNI" secondAttribute="bottom" constant="130" id="g2s-VF-uTl"/>
+                            <constraint firstItem="fLO-zw-sNI" firstAttribute="centerX" secondItem="7fs-Pe-Jar" secondAttribute="centerX" id="lIO-vt-KEC"/>
+                            <constraint firstItem="fLO-zw-sNI" firstAttribute="top" secondItem="ira-Um-MZB" secondAttribute="top" constant="70" id="mtE-ep-Zh3"/>
+                            <constraint firstItem="5Hl-BR-eNO" firstAttribute="top" secondItem="fLO-zw-sNI" secondAttribute="bottom" constant="2" id="n0g-2i-Bbi"/>
+                            <constraint firstItem="iy4-az-RdM" firstAttribute="top" secondItem="fLO-zw-sNI" secondAttribute="bottom" constant="130" id="n3A-dF-rlV"/>
+                            <constraint firstItem="0hv-fW-U8f" firstAttribute="top" secondItem="iy4-az-RdM" secondAttribute="bottom" constant="50" id="ngQ-m0-4Ja"/>
+                            <constraint firstItem="5Hl-BR-eNO" firstAttribute="centerX" secondItem="7fs-Pe-Jar" secondAttribute="centerX" id="pu0-jy-IQr"/>
+                            <constraint firstItem="ira-Um-MZB" firstAttribute="trailing" secondItem="N3W-SV-f23" secondAttribute="trailing" constant="60" id="sTO-hs-If9"/>
+                            <constraint firstItem="ira-Um-MZB" firstAttribute="trailing" secondItem="2h0-u8-pQu" secondAttribute="trailing" constant="60" id="z1J-A4-mLc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AKS-N5-oY8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dSj-e1-OoS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="-576.5625"/>
+        </scene>
+        <!--Hard View Controller-->
+        <scene sceneID="uDS-im-Z8P">
+            <objects>
+                <viewController id="eS9-OM-Dmh" customClass="HardViewController" customModule="Find_couple" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ft-Wg-SzL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НАЙДИ ПАРУ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hui-Bf-5Ad">
+                                <rect key="frame" x="124.5" y="114" width="165.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qbw-5B-xk9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="164" id="hTO-me-FI1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HARD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hk-BX-ifY">
+                                <rect key="frame" x="178" y="146" width="58" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="8DD-dY-kTr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="58" id="NCM-cH-xTP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUX-3l-vuI">
+                                <rect key="frame" x="40" y="240" width="334" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPj-Oe-7YN">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drS-iQ-oHk">
+                                        <rect key="frame" x="117" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuN-lT-EIg">
+                                        <rect key="frame" x="234" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3Tm-MP-lqQ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjA-Xk-2g3">
+                                <rect key="frame" x="40" y="370" width="334" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeN-GR-4oj">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDo-lA-Ol3">
+                                        <rect key="frame" x="117" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcl-ow-eaX">
+                                        <rect key="frame" x="234" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fwj-KB-nFE"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgK-jB-3JJ">
+                                <rect key="frame" x="40" y="500" width="334" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5M-z6-sap">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdG-T4-9aW">
+                                        <rect key="frame" x="117" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-iH-JWR">
+                                        <rect key="frame" x="234" y="0.0" width="100" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Skin" imagePadding="16">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LJT-AO-4sc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oYo-mQ-KEk"/>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1hk-BX-ifY" firstAttribute="top" secondItem="Hui-Bf-5Ad" secondAttribute="bottom" constant="2" id="2j9-yj-aa5"/>
+                            <constraint firstItem="cjA-Xk-2g3" firstAttribute="top" secondItem="CUX-3l-vuI" secondAttribute="bottom" constant="30" id="7se-6n-fM0"/>
+                            <constraint firstItem="Hui-Bf-5Ad" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="Acn-zC-ZyU"/>
+                            <constraint firstItem="CUX-3l-vuI" firstAttribute="top" secondItem="1hk-BX-ifY" secondAttribute="bottom" constant="70" id="I4A-Dg-4UC"/>
+                            <constraint firstItem="Hui-Bf-5Ad" firstAttribute="top" secondItem="oYo-mQ-KEk" secondAttribute="top" constant="70" id="Kci-PQ-OKA"/>
+                            <constraint firstItem="cjA-Xk-2g3" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="ck0-4u-97k"/>
+                            <constraint firstItem="qgK-jB-3JJ" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="kSA-ks-5Ct"/>
+                            <constraint firstItem="CUX-3l-vuI" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="l5T-zo-gCf"/>
+                            <constraint firstItem="qgK-jB-3JJ" firstAttribute="top" secondItem="cjA-Xk-2g3" secondAttribute="bottom" constant="30" id="sb5-OY-T4A"/>
+                            <constraint firstItem="1hk-BX-ifY" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="wwo-8E-RiM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vKf-0x-BDg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyZ-ta-LAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="742.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Skin" width="100" height="100"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
