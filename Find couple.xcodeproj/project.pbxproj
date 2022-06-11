@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873C016E284FD2BA00CF5240 /* CardsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016D284FD2BA00CF5240 /* CardsClass.swift */; };
+		873C0170284FD2C600CF5240 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016F284FD2C600CF5240 /* Card.swift */; };
 		87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B32841F67100128E4B /* AppDelegate.swift */; };
 		87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B52841F67100128E4B /* SceneDelegate.swift */; };
 		87D6C9BB2841F67100128E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9B92841F67100128E4B /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		873C016D284FD2BA00CF5240 /* CardsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsClass.swift; sourceTree = "<group>"; };
+		873C016F284FD2C600CF5240 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		87D6C9B02841F67100128E4B /* Find couple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find couple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D6C9B32841F67100128E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D6C9B52841F67100128E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				87D6C9CB284205F500128E4B /* EasyGameViewController.swift */,
 				87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */,
 				87D6C9CF2842061800128E4B /* HardViewController.swift */,
+				873C016D284FD2BA00CF5240 /* CardsClass.swift */,
+				873C016F284FD2C600CF5240 /* Card.swift */,
 				87D6C9B92841F67100128E4B /* Main.storyboard */,
 				87D6C9BC2841F67200128E4B /* Assets.xcassets */,
 				87D6C9BE2841F67200128E4B /* LaunchScreen.storyboard */,
@@ -148,11 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */,
+				873C016E284FD2BA00CF5240 /* CardsClass.swift in Sources */,
 				87D6C9C82841F74A00128E4B /* MenuViewController.swift in Sources */,
 				87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */,
 				87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */,
 				87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */,
 				87D6C9D02842061800128E4B /* HardViewController.swift in Sources */,
+				873C0170284FD2C600CF5240 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

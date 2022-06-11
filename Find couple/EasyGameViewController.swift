@@ -8,22 +8,50 @@
 import UIKit
 
 class EasyGameViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet var cardsButtons: [UIButton]!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    lazy var game = CardsClass(numberOfPairsOfCards: (cardsButtons.count + 1) / 2)
+    
+    var cards = ["Chiken", "Parrot", "Sheep", "Flamingo", "Shark", "Giraffe"]
+    var cardsDictionary = [Int:String]()
+    
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "SCORE: \(score)"
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    */
-
+    
+    @IBAction func tapButton(_ sender: UIButton) {
+        score += 1
+        let cardNumber = cardsButtons.firstIndex(of: sender) ?? 0
+        game.chooseCard(at: cardNumber)
+        updateViewFromModel()
+    }
+    
+    func updateViewFromModel() {
+        for index in cardsButtons.indices {
+            let button = cardsButtons[index]
+            let card = game.cards[index]
+            if card.faceUp {
+                button.setImage(UIImage(named: image(for: card)), for: .normal)
+            } else {
+                card.matched ? button.setImage(UIImage(named: "Skin2"), for: .normal) : button.setImage(UIImage(named: "Skin"), for: .normal)
+            }
+        }
+    }
+    
+    func image(for card: Card) -> String {
+        if cardsDictionary[card.id] == nil, cards.count > 0 {
+            let randomIndex = Int(arc4random_uniform(UInt32(cards.count)))
+            cardsDictionary[card.id] = cards.remove(at: randomIndex)
+        }
+        return cardsDictionary[card.id]!
+    }
 }
+
