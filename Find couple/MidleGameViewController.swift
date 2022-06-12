@@ -70,4 +70,8 @@ class MidleGameViewController: UIViewController {
             present(aler, animated: true)
         }
     }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
 }

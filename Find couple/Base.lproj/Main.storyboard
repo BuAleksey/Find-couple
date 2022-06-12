@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -242,8 +243,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kX4-qk-wcA">
                                 <rect key="frame" x="132" y="748" width="150" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="Fh3-Zr-xkk"/>
-                                    <constraint firstAttribute="width" constant="150" id="N4u-5h-5ew"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Fh3-Zr-xkk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="N4u-5h-5ew"/>
                                     <constraint firstAttribute="height" constant="24" id="OYL-Ao-H2E"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="24" id="mNY-g8-kuX"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="nzK-Xd-cQb"/>
@@ -255,16 +256,31 @@
                                 <color key="shadowColor" systemColor="placeholderTextColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRB-hF-aok">
+                                <rect key="frame" x="349" y="20" width="45" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.backward.circle" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="Dsq-fb-kX0" eventType="touchUpInside" id="2IF-lF-ojg"/>
+                                    <action selector="backButton:" destination="8dI-Ne-otu" eventType="touchUpInside" id="dNY-6g-O1o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g2G-7o-eBJ"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VRB-hF-aok" firstAttribute="trailing" secondItem="neG-aY-zcu" secondAttribute="trailingMargin" id="0vB-2T-CtH"/>
+                            <constraint firstItem="VRB-hF-aok" firstAttribute="top" secondItem="neG-aY-zcu" secondAttribute="top" constant="20" symbolic="YES" id="7Gk-NJ-ymf"/>
                             <constraint firstItem="g2G-7o-eBJ" firstAttribute="bottom" secondItem="kX4-qk-wcA" secondAttribute="bottom" constant="70" id="BDy-64-KSf"/>
                             <constraint firstItem="p0f-wU-lxM" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="Cxj-VX-oOI"/>
                             <constraint firstItem="31e-b7-aG0" firstAttribute="top" secondItem="p0f-wU-lxM" secondAttribute="bottom" constant="130" id="ENC-Cf-swX"/>
                             <constraint firstItem="7qN-4m-5Fc" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="OfW-1w-yYU"/>
                             <constraint firstItem="kX4-qk-wcA" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="agF-5S-psl"/>
                             <constraint firstItem="p0f-wU-lxM" firstAttribute="top" secondItem="RbG-lB-DR2" secondAttribute="bottom" constant="2" id="an4-3K-Xtf"/>
+                            <constraint firstItem="VRB-hF-aok" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="g2G-7o-eBJ" secondAttribute="leading" symbolic="YES" id="dpW-JQ-EGG"/>
                             <constraint firstItem="31e-b7-aG0" firstAttribute="centerX" secondItem="neG-aY-zcu" secondAttribute="centerX" id="ke2-cx-kaj"/>
                             <constraint firstItem="RbG-lB-DR2" firstAttribute="top" secondItem="g2G-7o-eBJ" secondAttribute="top" constant="70" id="lX1-mS-O9g"/>
                             <constraint firstItem="7qN-4m-5Fc" firstAttribute="top" secondItem="31e-b7-aG0" secondAttribute="bottom" constant="40" id="mON-2E-l27"/>
@@ -386,7 +402,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGo-oF-Mx7">
                                 <rect key="frame" x="132" y="748" width="150" height="24"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="LAu-vo-D9z"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="LAu-vo-D9z"/>
                                     <constraint firstAttribute="height" constant="24" id="Xj2-rf-gyp"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="dmP-bO-0Jr"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="sfg-xo-Ovi"/>
@@ -397,6 +413,17 @@
                                 <color key="shadowColor" systemColor="placeholderTextColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHX-UY-kPu">
+                                <rect key="frame" x="349" y="20" width="45" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.backward.circle" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="8dI-Ne-otu" eventType="touchUpInside" id="1zN-Fm-Vyj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ira-Um-MZB"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -406,6 +433,8 @@
                             <constraint firstItem="N3W-SV-f23" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0hv-fW-U8f" secondAttribute="trailing" constant="8" symbolic="YES" id="9Jc-Nt-Dpy"/>
                             <constraint firstItem="0hv-fW-U8f" firstAttribute="leading" secondItem="ira-Um-MZB" secondAttribute="leading" constant="60" id="Fxo-QO-MaH"/>
                             <constraint firstItem="2h0-u8-pQu" firstAttribute="leading" secondItem="iy4-az-RdM" secondAttribute="trailing" constant="94" id="LhB-yS-20B"/>
+                            <constraint firstItem="tHX-UY-kPu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ira-Um-MZB" secondAttribute="leading" symbolic="YES" id="RMD-UX-ZXP"/>
+                            <constraint firstItem="tHX-UY-kPu" firstAttribute="top" secondItem="7fs-Pe-Jar" secondAttribute="top" constant="20" symbolic="YES" id="Ryt-B3-HQO"/>
                             <constraint firstItem="N3W-SV-f23" firstAttribute="top" secondItem="2h0-u8-pQu" secondAttribute="bottom" constant="50" id="d59-az-ahy"/>
                             <constraint firstItem="2h0-u8-pQu" firstAttribute="top" secondItem="fLO-zw-sNI" secondAttribute="bottom" constant="130" id="g2s-VF-uTl"/>
                             <constraint firstItem="fLO-zw-sNI" firstAttribute="centerX" secondItem="7fs-Pe-Jar" secondAttribute="centerX" id="lIO-vt-KEC"/>
@@ -414,6 +443,7 @@
                             <constraint firstItem="iy4-az-RdM" firstAttribute="top" secondItem="fLO-zw-sNI" secondAttribute="bottom" constant="130" id="n3A-dF-rlV"/>
                             <constraint firstItem="0hv-fW-U8f" firstAttribute="top" secondItem="iy4-az-RdM" secondAttribute="bottom" constant="50" id="ngQ-m0-4Ja"/>
                             <constraint firstItem="5Hl-BR-eNO" firstAttribute="centerX" secondItem="7fs-Pe-Jar" secondAttribute="centerX" id="pu0-jy-IQr"/>
+                            <constraint firstItem="tHX-UY-kPu" firstAttribute="trailing" secondItem="7fs-Pe-Jar" secondAttribute="trailingMargin" id="ruE-1F-kIH"/>
                             <constraint firstItem="ira-Um-MZB" firstAttribute="trailing" secondItem="N3W-SV-f23" secondAttribute="trailing" constant="60" id="sTO-hs-If9"/>
                             <constraint firstItem="ira-Um-MZB" firstAttribute="trailing" secondItem="2h0-u8-pQu" secondAttribute="trailing" constant="60" id="z1J-A4-mLc"/>
                             <constraint firstItem="ira-Um-MZB" firstAttribute="bottom" secondItem="iGo-oF-Mx7" secondAttribute="bottom" constant="70" id="zyP-ko-U0P"/>
@@ -645,10 +675,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="DnL-bj-56U"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="GBu-9V-OPn"/>
-                                    <constraint firstAttribute="width" constant="150" id="Oc9-JE-jC5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Oc9-JE-jC5"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="52" id="Sr4-jV-D8p"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="24" id="nPm-IB-S8r"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="r8o-nY-7p4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="r8o-nY-7p4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -656,14 +686,29 @@
                                 <color key="shadowColor" systemColor="placeholderTextColor"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2E-Xj-VWH">
+                                <rect key="frame" x="349" y="20" width="45" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrow.backward.circle" catalog="system" symbolScale="large"/>
+                                    <color key="baseForegroundColor" red="1" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="8dI-Ne-otu" eventType="touchUpInside" id="GOw-fR-LMp"/>
+                                    <action selector="backButton:" destination="eS9-OM-Dmh" eventType="touchUpInside" id="YfK-xj-kNh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oYo-mQ-KEk"/>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="1hk-BX-ifY" firstAttribute="top" secondItem="Hui-Bf-5Ad" secondAttribute="bottom" constant="2" id="2j9-yj-aa5"/>
                             <constraint firstItem="cjA-Xk-2g3" firstAttribute="top" secondItem="CUX-3l-vuI" secondAttribute="bottom" constant="30" id="7se-6n-fM0"/>
+                            <constraint firstItem="i2E-Xj-VWH" firstAttribute="top" secondItem="9Ft-Wg-SzL" secondAttribute="top" constant="20" symbolic="YES" id="9AV-bf-VTq"/>
+                            <constraint firstItem="i2E-Xj-VWH" firstAttribute="trailing" secondItem="9Ft-Wg-SzL" secondAttribute="trailingMargin" id="9Ch-7y-MaD"/>
                             <constraint firstItem="Hui-Bf-5Ad" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="Acn-zC-ZyU"/>
                             <constraint firstItem="CUX-3l-vuI" firstAttribute="top" secondItem="1hk-BX-ifY" secondAttribute="bottom" constant="50" id="I4A-Dg-4UC"/>
+                            <constraint firstItem="i2E-Xj-VWH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oYo-mQ-KEk" secondAttribute="leading" symbolic="YES" id="Ice-bQ-2WG"/>
                             <constraint firstItem="2MG-zW-s9c" firstAttribute="centerX" secondItem="9Ft-Wg-SzL" secondAttribute="centerX" id="Inj-IW-jiZ"/>
                             <constraint firstItem="Hui-Bf-5Ad" firstAttribute="top" secondItem="oYo-mQ-KEk" secondAttribute="top" constant="70" id="Kci-PQ-OKA"/>
                             <constraint firstItem="rEM-pZ-K0m" firstAttribute="top" secondItem="qgK-jB-3JJ" secondAttribute="bottom" constant="30" id="MJg-k0-XEV"/>
@@ -700,6 +745,7 @@
     </scenes>
     <resources>
         <image name="Skin" width="100" height="100"/>
+        <image name="arrow.backward.circle" catalog="system" width="128" height="121"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
