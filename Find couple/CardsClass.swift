@@ -14,7 +14,6 @@ class CardsClass {
     var indexOfOneAndOnlyFaceUpCard: Int?
     
     func chooseCard (at index: Int) {
-        
         if !cards[index].matched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 if cards[matchIndex].id == cards[index].id {

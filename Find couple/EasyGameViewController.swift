@@ -32,6 +32,7 @@ class EasyGameViewController: UIViewController {
         let cardNumber = cardsButtons.firstIndex(of: sender) ?? 0
         game.chooseCard(at: cardNumber)
         updateViewFromModel()
+        presentWinLabel()
     }
     
     func updateViewFromModel() {
@@ -52,6 +53,22 @@ class EasyGameViewController: UIViewController {
             cardsDictionary[card.id] = cards.remove(at: randomIndex)
         }
         return cardsDictionary[card.id]!
+    }
+    
+    func presentWinLabel() {
+        var matchedArray = [Bool]()
+        for i in game.cards.indices {
+            let matched = game.cards[i].matched
+            matchedArray.append(matched)
+        }
+        if matchedArray.contains(false) {
+            return
+        } else {
+            let aler = UIAlertController(title: "WIN!!!", message: "Твой счет: \(score)", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .cancel)
+            aler.addAction(okAction)
+            present(aler, animated: true)
+        }
     }
 }
 
