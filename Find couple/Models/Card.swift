@@ -8,20 +8,18 @@
 import Foundation
 
 struct Card {
+    static var idFactory = 0
     
     var faceUp = false
     var matched = false
     var id: Int
     
-    static var idFactory = 0
-    
-    static func getId () -> Int {
-        
-        idFactory += 1
-        return idFactory
-    }
-    
     init () {
         self.id = Card.getId()
+    }
+    
+    static func getId () -> Int {
+        idFactory += 1
+        return idFactory
     }
 }

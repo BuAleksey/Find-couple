@@ -7,21 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		873C016E284FD2BA00CF5240 /* CardsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016D284FD2BA00CF5240 /* CardsClass.swift */; };
+		873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016D284FD2BA00CF5240 /* CardsManager.swift */; };
 		873C0170284FD2C600CF5240 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016F284FD2C600CF5240 /* Card.swift */; };
 		87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B32841F67100128E4B /* AppDelegate.swift */; };
 		87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B52841F67100128E4B /* SceneDelegate.swift */; };
 		87D6C9BB2841F67100128E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9B92841F67100128E4B /* Main.storyboard */; };
 		87D6C9BD2841F67200128E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9BC2841F67200128E4B /* Assets.xcassets */; };
 		87D6C9C02841F67200128E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9BE2841F67200128E4B /* LaunchScreen.storyboard */; };
-		87D6C9C82841F74A00128E4B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9C72841F74A00128E4B /* MenuViewController.swift */; };
 		87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CB284205F500128E4B /* EasyGameViewController.swift */; };
 		87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */; };
 		87D6C9D02842061800128E4B /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CF2842061800128E4B /* HardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		873C016D284FD2BA00CF5240 /* CardsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsClass.swift; sourceTree = "<group>"; };
+		873C016D284FD2BA00CF5240 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
 		873C016F284FD2C600CF5240 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		87D6C9B02841F67100128E4B /* Find couple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find couple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D6C9B32841F67100128E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +29,6 @@
 		87D6C9BC2841F67200128E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D6C9BF2841F67200128E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87D6C9C12841F67200128E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87D6C9C72841F74A00128E4B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		87D6C9CB284205F500128E4B /* EasyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameViewController.swift; sourceTree = "<group>"; };
 		87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidleGameViewController.swift; sourceTree = "<group>"; };
 		87D6C9CF2842061800128E4B /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +45,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		878B2DD329326A8800E441D9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				87D6C9B52841F67100128E4B /* SceneDelegate.swift */,
+				87D6C9B32841F67100128E4B /* AppDelegate.swift */,
+				87D6C9C12841F67200128E4B /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		878B2DD429326A8F00E441D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				873C016F284FD2C600CF5240 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		878B2DD529326AD400E441D9 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				873C016D284FD2BA00CF5240 /* CardsManager.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		878B2DD629326AE800E441D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				87D6C9CB284205F500128E4B /* EasyGameViewController.swift */,
+				87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */,
+				87D6C9CF2842061800128E4B /* HardViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		878B2DD729326B1300E441D9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				87D6C9B92841F67100128E4B /* Main.storyboard */,
+				87D6C9BE2841F67200128E4B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		87D6C9A72841F67100128E4B = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +109,12 @@
 		87D6C9B22841F67100128E4B /* Find couple */ = {
 			isa = PBXGroup;
 			children = (
-				87D6C9B32841F67100128E4B /* AppDelegate.swift */,
-				87D6C9B52841F67100128E4B /* SceneDelegate.swift */,
-				87D6C9C72841F74A00128E4B /* MenuViewController.swift */,
-				87D6C9CB284205F500128E4B /* EasyGameViewController.swift */,
-				87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */,
-				87D6C9CF2842061800128E4B /* HardViewController.swift */,
-				873C016D284FD2BA00CF5240 /* CardsClass.swift */,
-				873C016F284FD2C600CF5240 /* Card.swift */,
-				87D6C9B92841F67100128E4B /* Main.storyboard */,
+				878B2DD629326AE800E441D9 /* ViewControllers */,
+				878B2DD529326AD400E441D9 /* Supports */,
+				878B2DD429326A8F00E441D9 /* Models */,
+				878B2DD729326B1300E441D9 /* Storyboards */,
+				878B2DD329326A8800E441D9 /* App */,
 				87D6C9BC2841F67200128E4B /* Assets.xcassets */,
-				87D6C9BE2841F67200128E4B /* LaunchScreen.storyboard */,
-				87D6C9C12841F67200128E4B /* Info.plist */,
 			);
 			path = "Find couple";
 			sourceTree = "<group>";
@@ -154,8 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */,
-				873C016E284FD2BA00CF5240 /* CardsClass.swift in Sources */,
-				87D6C9C82841F74A00128E4B /* MenuViewController.swift in Sources */,
+				873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */,
 				87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */,
 				87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */,
 				87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */,
@@ -309,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Find couple/Info.plist";
+				INFOPLIST_FILE = "Find couple/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -337,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Find couple/Info.plist";
+				INFOPLIST_FILE = "Find couple/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

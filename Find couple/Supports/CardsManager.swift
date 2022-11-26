@@ -5,13 +5,19 @@
 //  Created by Buba on 07.06.2022.
 //
 
-import Foundation
+import UIKit
 
-class CardsClass {
+class CardsManager {
+    var cards: [Card] = []
+    private var indexOfOneAndOnlyFaceUpCard: Int?
     
-    var cards = [Card]()
-    
-    var indexOfOneAndOnlyFaceUpCard: Int?
+    init (numberOfPairsOfCards: Int) {
+        for _ in 0..<numberOfPairsOfCards {
+            let card = Card()
+            cards += [card, card]
+        }
+        cards.shuffle()
+    }
     
     func chooseCard (at index: Int) {
         if !cards[index].matched {
@@ -30,13 +36,5 @@ class CardsClass {
                 indexOfOneAndOnlyFaceUpCard = index
             }
         }
-    }
-    
-    init (numberOfPairsOfCards: Int) {
-        for _ in 0..<numberOfPairsOfCards {
-            let card = Card()
-            cards += [card, card]
-        }
-                cards.shuffle()
     }
 }

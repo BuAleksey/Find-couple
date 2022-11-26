@@ -7,24 +7,30 @@
 
 import UIKit
 
-class MidleGameViewController: UIViewController {
+final class MidleGameViewController: UIViewController {
     
     @IBOutlet var cardsButtons: [UIButton]!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    lazy var game = CardsClass(numberOfPairsOfCards: (cardsButtons.count + 1) / 2)
+    private lazy var game = CardsManager(
+        numberOfPairsOfCards: (cardsButtons.count + 1) / 2
+    )
     
-    var cards = ["Chiken", "Parrot", "Sheep", "Flamingo", "Shark", "Giraffe"]
+    private var cards = [
+        "Chiken",
+        "Parrot",
+        "Sheep",
+        "Flamingo",
+        "Shark",
+        "Giraffe"
+    ]
+    
     var cardsDictionary = [Int:String]()
     
-    var score = 0 {
+    private var score = 0 {
         didSet {
             scoreLabel.text = "SCORE: \(score)"
         }
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     @IBAction func tapButton(_ sender: UIButton) {
@@ -35,7 +41,7 @@ class MidleGameViewController: UIViewController {
         presentWinLabel()
     }
     
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         for index in cardsButtons.indices {
             let button = cardsButtons[index]
             let card = game.cards[index]
@@ -47,7 +53,7 @@ class MidleGameViewController: UIViewController {
         }
     }
     
-    func image(for card: Card) -> String {
+    private func image(for card: Card) -> String {
         if cardsDictionary[card.id] == nil, cards.count > 0 {
             let randomIndex = Int(arc4random_uniform(UInt32(cards.count)))
             cardsDictionary[card.id] = cards.remove(at: randomIndex)
@@ -55,7 +61,7 @@ class MidleGameViewController: UIViewController {
         return cardsDictionary[card.id]!
     }
     
-    func presentWinLabel() {
+    private func presentWinLabel() {
         var matchedArray = [Bool]()
         for i in game.cards.indices {
             let matched = game.cards[i].matched
@@ -64,7 +70,11 @@ class MidleGameViewController: UIViewController {
         if matchedArray.contains(false) {
             return
         } else {
-            let aler = UIAlertController(title: "WIN!!!", message: "Твой счет: \(score)", preferredStyle: .alert)
+            let aler = UIAlertController(
+                title: "WIN!!!",
+                message: "Твой счет: \(score)",
+                preferredStyle: .alert
+            )
             let okAction = UIAlertAction(title: "OK", style: .cancel)
             aler.addAction(okAction)
             present(aler, animated: true)
