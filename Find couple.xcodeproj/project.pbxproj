@@ -16,7 +16,7 @@
 		87D6C9C02841F67200128E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9BE2841F67200128E4B /* LaunchScreen.storyboard */; };
 		87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CB284205F500128E4B /* EasyGameViewController.swift */; };
 		87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */; };
-		87D6C9D02842061800128E4B /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CF2842061800128E4B /* HardViewController.swift */; };
+		87D6C9D02842061800128E4B /* HardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CF2842061800128E4B /* HardGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		87D6C9C12841F67200128E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87D6C9CB284205F500128E4B /* EasyGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyGameViewController.swift; sourceTree = "<group>"; };
 		87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidleGameViewController.swift; sourceTree = "<group>"; };
-		87D6C9CF2842061800128E4B /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
+		87D6C9CF2842061800128E4B /* HardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 			children = (
 				87D6C9CB284205F500128E4B /* EasyGameViewController.swift */,
 				87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */,
-				87D6C9CF2842061800128E4B /* HardViewController.swift */,
+				87D6C9CF2842061800128E4B /* HardGameViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -203,7 +203,7 @@
 				87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */,
 				87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */,
 				87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */,
-				87D6C9D02842061800128E4B /* HardViewController.swift in Sources */,
+				87D6C9D02842061800128E4B /* HardGameViewController.swift in Sources */,
 				873C0170284FD2C600CF5240 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

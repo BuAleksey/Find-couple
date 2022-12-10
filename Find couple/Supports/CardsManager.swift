@@ -67,7 +67,7 @@ class CardsManager {
         return cardsDictionary[card.id]!
     }
     
-    func presentWinLabel(with score: Int, from view: UIViewController) {
+    func presentWinLabel(with score: Int, from view: UIViewController, key: String) {
         var matchedArray = [Bool]()
         for i in cards.indices {
             let matched = cards[i].matched
@@ -83,6 +83,7 @@ class CardsManager {
             )
             
             let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+                UserDefaults.standard.set(score, forKey: key)
                 view.dismiss(animated: true)
             }
             
