@@ -19,6 +19,7 @@ final class EasyGameViewController: UIViewController {
     
     private var score = 0 {
         didSet {
+            scoreLabel.pulsate()
             scoreLabel.text = "SCORE: \(score)"
         }
     }

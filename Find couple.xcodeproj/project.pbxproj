@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016D284FD2BA00CF5240 /* CardsManager.swift */; };
 		873C0170284FD2C600CF5240 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016F284FD2C600CF5240 /* Card.swift */; };
+		8772154C2945BB420088357C /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772154B2945BB420088357C /* Extension + UILabel.swift */; };
 		87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B32841F67100128E4B /* AppDelegate.swift */; };
 		87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B52841F67100128E4B /* SceneDelegate.swift */; };
 		87D6C9BB2841F67100128E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9B92841F67100128E4B /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		873C016D284FD2BA00CF5240 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
 		873C016F284FD2C600CF5240 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8772154B2945BB420088357C /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
 		87D6C9B02841F67100128E4B /* Find couple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find couple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D6C9B32841F67100128E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D6C9B52841F67100128E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 		870539A32932A4FE00B3463D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8772154B2945BB420088357C /* Extension + UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */,
 				87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */,
 				87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */,
+				8772154C2945BB420088357C /* Extension + UILabel.swift in Sources */,
 				87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */,
 				87D6C9D02842061800128E4B /* HardGameViewController.swift in Sources */,
 				873C0170284FD2C600CF5240 /* Card.swift in Sources */,
