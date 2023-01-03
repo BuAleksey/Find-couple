@@ -13,7 +13,6 @@ final class Find_coupleTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = CardsManager(numberOfPairsOfCards: 4)
     }
 
     override func tearDown() {
@@ -22,6 +21,7 @@ final class Find_coupleTests: XCTestCase {
     }
 
     func testChooseCardIndexOfOneAndOnlyFaceUpCardEqual5() {
+        sut = CardsManager(numberOfPairsOfCards: 4)
         sut.chooseCard(at: 5)
         XCTAssertEqual(sut.indexOfOneAndOnlyFaceUpCard, 5)
      }
