@@ -25,4 +25,10 @@ final class Find_coupleTests: XCTestCase {
         sut.chooseCard(at: 5)
         XCTAssertEqual(sut.indexOfOneAndOnlyFaceUpCard, 5)
      }
+    
+    func testChooseCardIsFaceUp() {
+        sut = CardsManager(numberOfPairsOfCards: 1)
+        sut.chooseCard(at: 1)
+        XCTAssertTrue(sut.cards[1].faceUp)
+     }
 }
