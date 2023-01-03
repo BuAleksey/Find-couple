@@ -9,7 +9,7 @@ import UIKit
 
 class CardsManager {
     var cards: [Card] = []
-    private var indexOfOneAndOnlyFaceUpCard: Int?
+    private(set) var indexOfOneAndOnlyFaceUpCard: Int?
     private var cardsName = [
         "Chiken",
         "Parrot",

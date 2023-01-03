@@ -10,6 +10,7 @@
 		873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016D284FD2BA00CF5240 /* CardsManager.swift */; };
 		873C0170284FD2C600CF5240 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016F284FD2C600CF5240 /* Card.swift */; };
 		8772154C2945BB420088357C /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772154B2945BB420088357C /* Extension + UILabel.swift */; };
+		87C2AB322964175800A683C9 /* Find_coupleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C2AB312964175800A683C9 /* Find_coupleTests.swift */; };
 		87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B32841F67100128E4B /* AppDelegate.swift */; };
 		87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9B52841F67100128E4B /* SceneDelegate.swift */; };
 		87D6C9BB2841F67100128E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9B92841F67100128E4B /* Main.storyboard */; };
@@ -20,10 +21,22 @@
 		87D6C9D02842061800128E4B /* HardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D6C9CF2842061800128E4B /* HardGameViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		87C2AB332964175800A683C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87D6C9A82841F67100128E4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87D6C9AF2841F67100128E4B;
+			remoteInfo = "Find couple";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		873C016D284FD2BA00CF5240 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
 		873C016F284FD2C600CF5240 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8772154B2945BB420088357C /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
+		87C2AB2F2964175800A683C9 /* Find coupleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find coupleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C2AB312964175800A683C9 /* Find_coupleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_coupleTests.swift; sourceTree = "<group>"; };
 		87D6C9B02841F67100128E4B /* Find couple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find couple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D6C9B32841F67100128E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87D6C9B52841F67100128E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		87C2AB2C2964175800A683C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D6C9AD2841F67100128E4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -100,10 +120,19 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		87C2AB302964175800A683C9 /* Find coupleTests */ = {
+			isa = PBXGroup;
+			children = (
+				87C2AB312964175800A683C9 /* Find_coupleTests.swift */,
+			);
+			path = "Find coupleTests";
+			sourceTree = "<group>";
+		};
 		87D6C9A72841F67100128E4B = {
 			isa = PBXGroup;
 			children = (
 				87D6C9B22841F67100128E4B /* Find couple */,
+				87C2AB302964175800A683C9 /* Find coupleTests */,
 				87D6C9B12841F67100128E4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				87D6C9B02841F67100128E4B /* Find couple.app */,
+				87C2AB2F2964175800A683C9 /* Find coupleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +163,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		87C2AB2E2964175800A683C9 /* Find coupleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C2AB372964175800A683C9 /* Build configuration list for PBXNativeTarget "Find coupleTests" */;
+			buildPhases = (
+				87C2AB2B2964175800A683C9 /* Sources */,
+				87C2AB2C2964175800A683C9 /* Frameworks */,
+				87C2AB2D2964175800A683C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87C2AB342964175800A683C9 /* PBXTargetDependency */,
+			);
+			name = "Find coupleTests";
+			productName = "Find coupleTests";
+			productReference = 87C2AB2F2964175800A683C9 /* Find coupleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		87D6C9AF2841F67100128E4B /* Find couple */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87D6C9C42841F67200128E4B /* Build configuration list for PBXNativeTarget "Find couple" */;
@@ -157,9 +205,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					87C2AB2E2964175800A683C9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 87D6C9AF2841F67100128E4B;
+					};
 					87D6C9AF2841F67100128E4B = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -179,11 +231,19 @@
 			projectRoot = "";
 			targets = (
 				87D6C9AF2841F67100128E4B /* Find couple */,
+				87C2AB2E2964175800A683C9 /* Find coupleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		87C2AB2D2964175800A683C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D6C9AE2841F67100128E4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +257,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		87C2AB2B2964175800A683C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C2AB322964175800A683C9 /* Find_coupleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		87D6C9AC2841F67100128E4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +281,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87C2AB342964175800A683C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87D6C9AF2841F67100128E4B /* Find couple */;
+			targetProxy = 87C2AB332964175800A683C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		87D6C9B92841F67100128E4B /* Main.storyboard */ = {
@@ -234,6 +310,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		87C2AB352964175800A683C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F9PNG6Y95;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.Find-coupleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find couple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Find couple";
+			};
+			name = Debug;
+		};
+		87C2AB362964175800A683C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7F9PNG6Y95;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.Find-coupleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find couple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Find couple";
+			};
+			name = Release;
+		};
 		87D6C9C22841F67200128E4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,6 +523,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		87C2AB372964175800A683C9 /* Build configuration list for PBXNativeTarget "Find coupleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C2AB352964175800A683C9 /* Debug */,
+				87C2AB362964175800A683C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		87D6C9AB2841F67100128E4B /* Build configuration list for PBXProject "Find couple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
