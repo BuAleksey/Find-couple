@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8738A78D298EE09700623675 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738A78C298EE09700623675 /* Extension + UIButton.swift */; };
+		8738A78F298EE21500623675 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8738A78E298EE21500623675 /* StartViewController.swift */; };
 		873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016D284FD2BA00CF5240 /* CardsManager.swift */; };
 		873C0170284FD2C600CF5240 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C016F284FD2C600CF5240 /* Card.swift */; };
 		8772154C2945BB420088357C /* Extension + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772154B2945BB420088357C /* Extension + UILabel.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8738A78C298EE09700623675 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
+		8738A78E298EE21500623675 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		873C016D284FD2BA00CF5240 /* CardsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsManager.swift; sourceTree = "<group>"; };
 		873C016F284FD2C600CF5240 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8772154B2945BB420088357C /* Extension + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UILabel.swift"; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				8772154B2945BB420088357C /* Extension + UILabel.swift */,
+				8738A78C298EE09700623675 /* Extension + UIButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 		878B2DD629326AE800E441D9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8738A78E298EE21500623675 /* StartViewController.swift */,
 				87D6C9CB284205F500128E4B /* EasyGameViewController.swift */,
 				87D6C9CD2842060C00128E4B /* MidleGameViewController.swift */,
 				87D6C9CF2842061800128E4B /* HardGameViewController.swift */,
@@ -270,9 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D6C9B42841F67100128E4B /* AppDelegate.swift in Sources */,
+				8738A78D298EE09700623675 /* Extension + UIButton.swift in Sources */,
 				873C016E284FD2BA00CF5240 /* CardsManager.swift in Sources */,
 				87D6C9CC284205F500128E4B /* EasyGameViewController.swift in Sources */,
 				87D6C9CE2842060C00128E4B /* MidleGameViewController.swift in Sources */,
+				8738A78F298EE21500623675 /* StartViewController.swift in Sources */,
 				8772154C2945BB420088357C /* Extension + UILabel.swift in Sources */,
 				87D6C9B62841F67100128E4B /* SceneDelegate.swift in Sources */,
 				87D6C9D02842061800128E4B /* HardGameViewController.swift in Sources */,
@@ -319,13 +327,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.Find-coupleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find couple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Find couple";
 			};
 			name = Debug;
@@ -339,13 +350,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.Find-coupleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find couple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Find couple";
 			};
 			name = Release;
@@ -474,11 +488,12 @@
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find couple/App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,9 +501,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.Find-couple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -502,11 +520,12 @@
 				DEVELOPMENT_TEAM = 7F9PNG6Y95;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Find couple/App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.card-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,9 +533,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AlekseyBu.Find-couple";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

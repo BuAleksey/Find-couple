@@ -18,7 +18,7 @@ final class HardGameViewController: UIViewController {
     )
     private var score = 0 {
         didSet {
-            scoreLabel.pulsate()
+            scoreLabel.animation()
             scoreLabel.text = "SCORE: \(score)"
         }
     }
@@ -34,10 +34,6 @@ final class HardGameViewController: UIViewController {
         game.chooseCard(at: cardNumber)
         game.updateViewFromModel(with: cardsButtons)
         game.presentWinLabel(with: score, from: self, key: "Hard")
-    }
-    
-    @IBAction func backButton(_ sender: UIButton) {
-        dismiss(animated: true)
     }
 }
 

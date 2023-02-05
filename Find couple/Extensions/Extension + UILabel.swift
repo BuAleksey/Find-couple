@@ -8,16 +8,16 @@
 import UIKit
 
 extension UILabel {
-    func pulsate() {
-        let pulse = CASpringAnimation(keyPath: "transform.scale")
-        pulse.duration = 0.6
-        pulse.fromValue = 0.95
-        pulse.toValue = 1
-        pulse.autoreverses = true
-        pulse.repeatCount = 2
-        pulse.initialVelocity = 0.5
-        pulse.damping = 1
+    func animation() {
+        let animation = CASpringAnimation(keyPath: "transform.scale")
+        animation.duration = 0.6
+        animation.fromValue = 0.95
+        animation.toValue = 1
+        animation.autoreverses = true
+        animation.repeatCount = 2
+        animation.initialVelocity = 0.5
+        animation.damping = 1
         
-        layer.add(pulse, forKey: nil)
+        layer.add(animation, forKey: nil)
     }
 }

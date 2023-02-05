@@ -19,7 +19,7 @@ final class EasyGameViewController: UIViewController {
     
     private var score = 0 {
         didSet {
-            scoreLabel.pulsate()
+            scoreLabel.animation()
             scoreLabel.text = "SCORE: \(score)"
         }
     }
@@ -35,10 +35,6 @@ final class EasyGameViewController: UIViewController {
         game.chooseCard(at: cardNumber)
         game.updateViewFromModel(with: cardsButtons)
         game.presentWinLabel(with: score, from: self, key: "Easy")
-    }
-    
-    @IBAction func backButton(_ sender: UIButton) {
-        dismiss(animated: true)
     }
 }
 
